@@ -26,7 +26,9 @@ module load BIOS-IN5410/HT-2023
 mkdir -p $SUBMITDIR/gvcf
 
 ##RUN HAPLOTYPE CALLER
-gatk HaplotypeCaller -R Orosv1mt.fasta -I $FILENAME --ploidy 1 -O gvcf/$FILENAME.gvcf.gz -ERC GVCF 2> gvcf/HaploCaller_$FILENAME.out
+gatk HaplotypeCaller -R Orosv1mt.fasta \
+-I $FILENAME --ploidy 1 -O gvcf/$FILENAME.gvcf.gz -ERC GVCF \
+2> gvcf/HaploCaller_$FILENAME.out
 
 echo "$FILENAME HaplotypeCalled"
 
