@@ -5,7 +5,7 @@
 #SBATCH --nodes=1 		#number of nodes/CPU
 #SBATCH --ntasks=1		#how many tasks to run simutanously
 #SBATCH --time=3:00:00		#how long the job will go for
-#SBATCH --mem=1G		#how much memory
+#SBATCH --mem=4G		#how much memory
 
 ## Set up job environment
 set -o errexit 			# Exit script on any error
