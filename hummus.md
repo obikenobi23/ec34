@@ -4,3 +4,5 @@
 * lemon
 * olive oil
 * salt
+
+Mix ingredients well!
